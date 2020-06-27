@@ -2,12 +2,12 @@ package word
 
 import "testing"
 
-/*func TestPalindrome(t *testing.T) {
+func TestPalindrome(t *testing.T) {
 	if !IsPalindrome("detartrated") {
 		t.Error(`IsPalindrom("detartrated") = false`)
 	}
-	if !IsPalindrome("kayak") {
-		t.Error(`IsPalindrom("kayak") = false`)
+	if !IsPalindrome("kayake") {
+		t.Error(`IsPalindrom("kayake") = false`)
 	}
 }
 
@@ -28,7 +28,7 @@ func TestCanalPalindrome(t *testing.T) {
 	if !IsPalindrome(input) {
 		t.Errorf(`IsPalindrome(%q) = false`, input)
 	}
-}*/
+}
 
 // table-driven testing - iterate over a table of <test value>, <expected result>
 func TestIsPalindrome(t *testing.T) {
