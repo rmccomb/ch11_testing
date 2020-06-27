@@ -11,13 +11,11 @@ import "testing"
 	}
 }
 
-
 func TestNonPalindrome(t *testing.T) {
 	if IsPalindrome("palindrome") {
 		t.Error(`IsPalindrome("kayak") = true`)
 	}
 }
-
 
 func TestFrenchPalindrome(t *testing.T) {
 	if !IsPalindrome("été") {
@@ -32,7 +30,7 @@ func TestCanalPalindrome(t *testing.T) {
 	}
 }*/
 
-// table-driven testing
+// table-driven testing - iterate over a table of <test value>, <expected result>
 func TestIsPalindrome(t *testing.T) {
 	var tests = []struct {
 		input string
