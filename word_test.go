@@ -11,11 +11,13 @@ import "testing"
 	}
 }
 
+
 func TestNonPalindrome(t *testing.T) {
 	if IsPalindrome("palindrome") {
 		t.Error(`IsPalindrome("kayak") = true`)
 	}
 }
+
 
 func TestFrenchPalindrome(t *testing.T) {
 	if !IsPalindrome("été") {
